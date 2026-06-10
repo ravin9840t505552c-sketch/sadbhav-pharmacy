@@ -1,0 +1,974 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ============================================
+       SEO META TAGS
+       These help Google understand and index
+       the website for search results worldwide.
+     ============================================ -->
+    <title>Sadbhav Pharmacy | Trusted Healthcare in Chitwan, Nepal</title>
+    <meta
+      name="description"
+      content="Sadbhav Pharmacy in Pipalchowk, Bharatpur-4, Chitwan offers prescription and OTC medicines, medical checkups, wound dressing, nebulizer, blood pressure monitoring, home services for elderly and disabled patients, and lab specimen collection."
+    />
+    <meta
+      name="keywords"
+      content="Sadbhav Pharmacy, pharmacy Chitwan, medicine Bharatpur Chitwan Nepal, medical checkup Chitwan, nebulizer Chitwan, home health service Nepal, OTC drugs Nepal, prescription drugs Chitwan, Bharatpur 4 pharmacy, Pipalchowk pharmacy"
+    />
+    <meta name="author" content="Sabina Poudel" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://sadbhavpharmacy.github.io/" />
+
+    <!-- ============================================
+       OPEN GRAPH TAGS
+       Makes the website look great when shared
+       on Facebook, WhatsApp, Viber etc.
+     ============================================ -->
+    <meta
+      property="og:title"
+      content="Sadbhav Pharmacy | Trusted Healthcare in Chitwan"
+    />
+    <meta
+      property="og:description"
+      content="Your trusted pharmacy in Pipalchowk, Bharatpur-4, Chitwan, Nepal."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sadbhavpharmacy.github.io/" />
+
+    <!-- ============================================
+       SCHEMA MARKUP — JSON-LD
+       Structured data for Google.
+       Helps appear in Google Maps, local search,
+       voice search and rich results.
+       Exact coordinates: 27.67418, 84.42169
+     ============================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Pharmacy",
+        "name": "Sadbhav Pharmacy",
+        "description": "Trusted pharmacy in Pipalchowk, Bharatpur-4, Chitwan, Nepal.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "MCFC+HM7, Rampur Rd, Pipalchowk, Bharatpur-4",
+          "addressLocality": "Bharatpur",
+          "addressRegion": "Chitwan",
+          "postalCode": "44207",
+          "addressCountry": "NP"
+        },
+        "telephone": "+977-9845440560",
+        "email": "sadbhavpharmacy1@gmail.com",
+        "openingHours": "Su-Fr 07:00-20:00, Sa 08:00-18:00",
+        "identifier": "DDA No. 37407060532127",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "27.67418",
+          "longitude": "84.42169"
+        },
+        "hasMap": "https://maps.app.goo.gl/tzJt96VNFgHhU434A"
+      }
+    </script>
+
+    <!-- ============================================
+       GOOGLE FONTS
+       Playfair Display — elegant serif for headings
+       DM Sans — clean modern font for body text
+       Preconnect speeds up font loading.
+     ============================================ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ============================================
+       LUCIDE ICONS — CDN
+       Free clean icon library.
+       Loads from internet (CDN).
+       lucide.createIcons() in script.js
+       activates all icons on the page.
+       MUST be in <head> so icons load
+       before the page content appears.
+     ============================================ -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+    <!-- ============================================
+       EMAILJS CDN
+       We will DELETE this block in your project,
+       but keep it commented out here for clarity.
+    -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+      emailjs.init("92QixLPNBpXB00Eug");
+    </script>
+    -->
+
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ============================================
+       NAVBAR
+       id="navbar" — JavaScript targets this
+       to add class "scrolled" when page scrolls.
+
+       Logo: SVG file from assets/logo/logo.svg
+       If logo.svg not ready yet — emoji 🌿
+       shows as fallback automatically.
+
+       nav-cta = Contact Us gold pill button.
+       hamburger = mobile menu toggle button.
+     ============================================ -->
+    <nav id="navbar">
+      <!-- LOGO + PHARMACY NAME -->
+      <div class="nav-logo">
+        <div class="nav-logo-icon">
+          <img
+            src="assets/logos/logo.svg"
+            alt="Sadbhav Pharmacy Logo"
+            class="nav-logo-img"
+          />
+          <span class="nav-logo-fallback">🌿</span>
+        </div>
+        <div class="nav-logo-text">
+          Sadbhav Pharmacy
+          <span>Chitwan, Nepal</span>
+        </div>
+      </div>
+
+      <!-- NAVIGATION LINKS -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#staff">Our Team</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+      </ul>
+
+      <!-- HAMBURGER — mobile only, JS toggles menu -->
+      <button
+        class="hamburger"
+        id="hamburger"
+        aria-label="Toggle navigation menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <!-- ============================================
+       HERO SECTION
+       id="home" matches href="#home" in navbar.
+       Three hero-circle divs create decorative
+       thin rings in the background.
+       hero-bg-pattern creates soft glowing blobs.
+       hero-stats shows 3 quick fact cards.
+       scroll-down arrow bounces via CSS animation.
+     ============================================ -->
+    <section id="home">
+      <div class="hero-bg-pattern"></div>
+      <div class="hero-circle hero-circle-1"></div>
+      <div class="hero-circle hero-circle-2"></div>
+      <div class="hero-circle hero-circle-3"></div>
+
+      <div class="hero-content">
+        <div class="hero-badge">Trusted Healthcare · Chitwan, Nepal</div>
+        <h1 class="hero-title">
+          Your Health,<br />
+          Our <em>Heartfelt</em><br />
+          Commitment
+        </h1>
+        <p class="hero-subtitle">
+          Sadbhav Pharmacy offers trusted medicines, professional health
+          checkups, and compassionate care — right in the heart of Chitwan. From
+          prescription drugs to home visits for elderly patients.
+        </p>
+        <div class="hero-buttons">
+          <!-- btn-primary = solid gold button -->
+          <a href="#services" class="btn-primary">Explore Services</a>
+          <!-- btn-outline = transparent bordered button -->
+          <a href="#contact" class="btn-outline">Contact Us</a>
+        </div>
+      </div>
+
+      <!-- Quick stats — bottom right of hero -->
+      <div class="hero-stats">
+        <div class="stat-card">
+          <div class="stat-number">9+</div>
+          <div class="stat-label">Services</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">DDA</div>
+          <div class="stat-label">Registered</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">24/7</div>
+          <div class="stat-label">Home Service</div>
+        </div>
+      </div>
+
+      <!-- Bouncing scroll indicator -->
+      <div class="scroll-down">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path d="M12 5v14M5 12l7 7 7-7" />
+        </svg>
+        scroll
+      </div>
+    </section>
+
+    <!-- ============================================
+       GALLERY SECTION
+       Shows 4 photo cards of the pharmacy.
+
+       HOW TO ADD REAL PHOTOS:
+       1. Save photos inside: assets/images/
+       2. Name them exactly:
+          pharmacy-exterior.jpg
+          dressing-room.jpg
+          sabina-poudel.jpg
+          dipak-dhakal.jpg
+       3. In each card below, REPLACE the
+          gallery-placeholder div with:
+          <img src="assets/images/photo-name.jpg"
+               alt="Description of photo" />
+
+       PHOTO TIPS:
+       Minimum size: 800x600 pixels
+       Keep under 500KB per photo
+       Use JPG format
+     ============================================ -->
+    <section id="gallery">
+      <div class="section-header reveal">
+        <span class="section-label">Our Facility</span>
+        <h2 class="section-title">Inside Sadbhav Pharmacy</h2>
+        <p class="section-desc">
+          A welcoming, clean, and professionally equipped pharmacy serving
+          Pipalchowk, Bharatpur-4.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- CARD 1: Pharmacy Exterior -->
+        <div class="gallery-card reveal">
+          <img
+            src="assets/images/pharmacy-exterior.jpg"
+            alt="Sadbhav Pharmacy Exterior"
+          />
+
+          <div class="gallery-overlay">
+            <div class="gallery-caption">
+              Sadbhav Pharmacy — Pipalchowk, Bharatpur-4
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 2: Dressing Room -->
+        <div class="gallery-card reveal">
+          <img src="assets/images/dressing-room.jpg" alt="Dressing Room" />
+          <div class="gallery-overlay">
+            <div class="gallery-caption">Clean &amp; Sterile Dressing Room</div>
+          </div>
+        </div>
+
+        <!-- CARD 3: Sabina Poudel -->
+        <div class="gallery-card reveal">
+          <img src="assets/images/sabina-poudel.jpg" alt="Sabina Poudel" />
+          <div class="gallery-overlay">
+            <div class="gallery-caption">
+              Sabina Poudel — Proprietor &amp; Pharmacist
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 4: Dipak Dhakal -->
+        <div class="gallery-card reveal">
+          <img src="assets/images/dipak-dhakal.jpg" alt="Dipak Dhakal" />
+          <div class="gallery-overlay">
+            <div class="gallery-caption">
+              Dipak Dhakal — Health Assistant (HA) · PHI
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+       SERVICES SECTION
+       9 service cards with Lucide icons.
+       data-lucide="icon-name" — Lucide reads
+       this and draws the SVG icon automatically
+       when lucide.createIcons() runs in script.js.
+     ============================================ -->
+    <section id="services">
+      <div class="section-header reveal">
+        <span class="section-label">What We Offer</span>
+        <h2 class="section-title">Our Healthcare Services</h2>
+        <p class="section-desc">
+          Comprehensive pharmacy and health services delivered with warmth,
+          professionalism, and genuine care for every patient.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon"><i data-lucide="pill"></i></div>
+          <h3 class="service-name">OTC Medicines</h3>
+          <p class="service-desc">
+            A wide range of over-the-counter medicines available for common
+            health needs — no prescription required.
+          </p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon"><i data-lucide="clipboard-plus"></i></div>
+          <h3 class="service-name">Prescription Drugs</h3>
+          <p class="service-desc">
+            Dispensing prescription medications accurately with proper guidance.
+            All drugs stored and handled as per DDA standards.
+          </p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon"><i data-lucide="bandage"></i></div>
+          <h3 class="service-name">Minor Wound Dressing</h3>
+          <p class="service-desc">
+            Professional cleaning and dressing of minor cuts, wounds, and
+            abrasions with sterile technique and quality materials.
+          </p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon"><i data-lucide="stethoscope"></i></div>
+          <h3 class="service-name">Medical Checkups</h3>
+          <p class="service-desc">
+            Basic health assessments to monitor your condition and help you stay
+            informed about your well-being.
+          </p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon"><i data-lucide="wind"></i></div>
+          <h3 class="service-name">Nebulizer Service</h3>
+          <p class="service-desc">
+            Nebulization therapy for respiratory conditions including asthma and
+            bronchitis, using clean and calibrated equipment.
+          </p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon"><i data-lucide="heart-pulse"></i></div>
+          <h3 class="service-name">Blood Pressure Monitoring</h3>
+          <p class="service-desc">
+            Quick and accurate blood pressure checks to help you keep track of
+            your cardiovascular health regularly.
+          </p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon"><i data-lucide="house-plus"></i></div>
+          <h3 class="service-name">Home Visit Services</h3>
+          <p class="service-desc">
+            Dedicated home healthcare for elderly and disabled patients —
+            bringing quality care right to your doorstep.
+          </p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <i data-lucide="message-circle-heart"></i>
+          </div>
+          <h3 class="service-name">Medication Guidance</h3>
+          <p class="service-desc">
+            Friendly, clear explanations on how to take medicines correctly —
+            dosage, timing, and precautions explained with care.
+          </p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon"><i data-lucide="microscope"></i></div>
+          <h3 class="service-name">Lab Specimen Collection</h3>
+          <p class="service-desc">
+            Collection of blood, urine, and stool samples — handled safely and
+            forwarded to certified laboratories for accurate results.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+       ABOUT SECTION
+       Two-column layout: image left, text right.
+       about-badge-float = floating DDA gold badge
+       positioned over the image.
+     ============================================ -->
+    <section id="about">
+      <div class="about-grid">
+        <div class="about-visual reveal">
+          <div class="about-img-wrap">
+            <!--
+            TO ADD PHARMACY PHOTO HERE:
+            Replace the div below with:
+            <img src="assets/images/pharmacy-exterior.jpg"
+                 alt="Sadbhav Pharmacy Pipalchowk" />
+            -->
+            <div class="img-fallback">🌿</div>
+          </div>
+          <div class="about-badge-float">
+            <strong>DDA</strong>
+            Registered<br />Pharmacy
+          </div>
+        </div>
+
+        <div class="about-content reveal">
+          <span class="section-label">About Us</span>
+          <h2 class="section-title">
+            Caring for Chitwan with Compassion &amp; Trust
+          </h2>
+          <p class="section-desc">
+            Sadbhav Pharmacy was founded with one simple belief — every person
+            deserves accessible, honest, and compassionate healthcare. Led by
+            <strong>Sabina Poudel</strong>, our pharmacy is a safe space where
+            patients feel heard, respected, and well cared for.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <div class="highlight-dot"></div>
+              <p>
+                Legally registered with the
+                <strong>Department of Drug Administration (DDA)</strong>,
+                ensuring every medicine we dispense meets national quality
+                standards.
+              </p>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-dot"></div>
+              <p>
+                Staffed by trained health professionals with practical
+                experience in community and clinical healthcare.
+              </p>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-dot"></div>
+              <p>
+                Serving the local community of Pipalchowk, Bharatpur-4, Chitwan
+                with reliable, affordable, and patient-centered healthcare
+                services.
+              </p>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-dot"></div>
+              <p>
+                Special focus on home visits for
+                <strong>geriatric and disabled patients</strong> who cannot
+                easily travel to healthcare facilities.
+              </p>
+            </div>
+          </div>
+          <div class="dda-badge">
+            <span>🏛️</span>
+            <div>
+              <strong>DDA Registration No.</strong><br />
+              37407060532127
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+       STAFF SECTION
+       Two staff cards: Sabina Poudel and Dipak Dhakal.
+
+       HOW TO ADD PROFILE PHOTOS:
+       Save photos at:
+         assets/images/sabina-poudel.jpg
+         assets/images/dipak-dhakal.jpg
+       Then REPLACE each photo-fallback div with:
+         <img src="assets/images/sabina-poudel.jpg"
+              alt="Sabina Poudel" />
+     ============================================ -->
+    <section id="staff">
+      <div class="section-header reveal">
+        <span class="section-label">Our Team</span>
+        <h2 class="section-title">Meet Our Healthcare Professionals</h2>
+        <p class="section-desc">
+          Experienced and dedicated professionals committed to your health and
+          well-being.
+        </p>
+      </div>
+
+      <div class="staff-grid">
+        <!-- SABINA POUDEL — Proprietor -->
+        <div class="staff-card reveal">
+          <div class="staff-header">
+            <div class="staff-photo">
+              <img src="assets/images/sabina-poudel.jpg" />
+            </div>
+            <div>
+              <div class="staff-name">Sabina Poudel</div>
+              <div class="staff-role">Proprietor &amp; Pharmacist</div>
+            </div>
+          </div>
+          <p class="staff-bio">
+            Founder and owner of Sadbhav Pharmacy. Dedicated to providing
+            accessible, honest, and high-quality pharmaceutical care to the
+            Pipalchowk, Bharatpur-4 community. Known for her warm and
+            patient-friendly approach.
+          </p>
+          <div class="staff-tags">
+            <span class="staff-tag">Pharmacy Management</span>
+            <span class="staff-tag">Patient Care</span>
+            <span class="staff-tag">Drug Dispensing</span>
+          </div>
+          <div class="staff-credential">
+            🏛️ <strong>DDA No.</strong>&nbsp;37407060532127
+          </div>
+        </div>
+
+        <!-- DIPAK DHAKAL — Health Assistant -->
+        <div class="staff-card reveal">
+          <div class="staff-header">
+            <div class="staff-photo">
+              <img src="assets/images/dipak-dhakal.jpg" />
+            </div>
+            <div>
+              <div class="staff-name">Dipak Dhakal</div>
+              <div class="staff-role">Health Assistant (HA) · PHI</div>
+            </div>
+          </div>
+          <p class="staff-bio">
+            A qualified Health Assistant (HA) serving as a Public Health
+            Inspector (PHI) at a government health post in Chitwan. With
+            extensive community health experience, Dipak provides clinical
+            guidance and health assessments at Sadbhav Pharmacy during his
+            available hours outside of government duty.
+          </p>
+          <div class="staff-tags">
+            <span class="staff-tag">Community Health</span>
+            <span class="staff-tag">Clinical Practice</span>
+            <span class="staff-tag">Public Health</span>
+          </div>
+          <div class="staff-credential">
+            🏛️ <strong>NHPC License:</strong>&nbsp;B-6041 Med GM
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+       WHY CHOOSE US SECTION
+       Dark green background with glass cards.
+       6 reason cards with Lucide icons.
+     ============================================ -->
+    <section id="why">
+      <div class="section-header reveal">
+        <span class="section-label">Our Promise</span>
+        <h2 class="section-title">Why Choose Sadbhav Pharmacy?</h2>
+        <p class="section-desc">
+          We go beyond dispensing medicines — we build lasting trust with every
+          patient we serve.
+        </p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card reveal">
+          <div class="why-icon"><i data-lucide="shield-check"></i></div>
+          <h3 class="why-title">Legally Registered</h3>
+          <p class="why-text">
+            Fully compliant with Nepal's DDA regulations. Every medicine
+            dispensed is genuine and properly stored.
+          </p>
+        </div>
+
+        <div class="why-card reveal">
+          <div class="why-icon"><i data-lucide="handshake"></i></div>
+          <h3 class="why-title">Warm &amp; Respectful Care</h3>
+          <p class="why-text">
+            We treat every patient with dignity and kindness. Our staff explains
+            medications clearly and listens to your concerns.
+          </p>
+        </div>
+
+        <div class="why-card reveal">
+          <div class="why-icon"><i data-lucide="users"></i></div>
+          <h3 class="why-title">Community-Centered</h3>
+          <p class="why-text">
+            Rooted in Chitwan, we understand the local community's healthcare
+            needs and tailor our services accordingly.
+          </p>
+        </div>
+
+        <div class="why-card reveal">
+          <div class="why-icon"><i data-lucide="car-front"></i></div>
+          <h3 class="why-title">Home Visit Available</h3>
+          <p class="why-text">
+            Can't travel? We bring our services to elderly, disabled, and
+            immobile patients right at home.
+          </p>
+        </div>
+
+        <div class="why-card reveal">
+          <div class="why-icon"><i data-lucide="test-tubes"></i></div>
+          <h3 class="why-title">Lab Collection On-Site</h3>
+          <p class="why-text">
+            Convenient blood, urine, and stool specimen collection — handled
+            safely and sent to certified labs.
+          </p>
+        </div>
+
+        <div class="why-card reveal">
+          <div class="why-icon"><i data-lucide="lightbulb"></i></div>
+          <h3 class="why-title">Health Guidance</h3>
+          <p class="why-text">
+            We educate patients. You leave with a clear understanding of how to
+            use your medications safely.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+       CONTACT SECTION
+       Left column: contact info cards
+       Right column: updated prescription form
+       Below: Google Maps embed
+     ============================================ -->
+    <section id="contact">
+      <div class="section-header reveal">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">Visit Us or Send a Message</h2>
+        <p class="section-desc">
+          We'd love to hear from you. Stop by our pharmacy or reach out below.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- LEFT COLUMN: Contact info cards -->
+        <div class="contact-info reveal">
+          <!-- ADDRESS -->
+          <div class="contact-item">
+            <div class="contact-item-icon">📍</div>
+            <div>
+              <div class="contact-item-title">Address</div>
+              <div class="contact-item-value">
+                MCFC+HM7, Rampur Rd<br />
+                Pipalchowk, Bharatpur-4<br />
+                Chitwan 44207, Nepal
+              </div>
+            </div>
+          </div>
+
+          <!-- PHONE — ONE TAP CALL -->
+          <div class="contact-item">
+            <div class="contact-item-icon">📞</div>
+            <div>
+              <div class="contact-item-title">Phone — One Tap Call</div>
+              <div class="contact-item-value">
+                <a href="tel:+9779845440560" class="tap-call-btn">
+                  <i data-lucide="phone-call"></i>
+                  Call 9845440560
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- WHATSAPP CHAT BUTTON -->
+          <div class="contact-item">
+            <div class="contact-item-icon">💬</div>
+            <div>
+              <div class="contact-item-title">WhatsApp Chat</div>
+              <div class="contact-item-value">
+                <a
+                  href="https://wa.me/9779856014560?text=Hello%20Sadbhav%20Pharmacy!%20I%20would%20like%20to%20enquire%20about%20your%20services."
+                  target="_blank"
+                  rel="noopener"
+                  class="whatsapp-chat-btn"
+                >
+                  <i data-lucide="message-circle"></i>
+                  Chat on WhatsApp
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- EMAIL -->
+          <div class="contact-item">
+            <div class="contact-item-icon">📧</div>
+            <div>
+              <div class="contact-item-title">Email</div>
+              <div class="contact-item-value">
+                <a href="mailto:sadbhavpharmacy1@gmail.com" class="email-link">
+                  sadbhavpharmacy1@gmail.com
+                </a>
+                <br />
+                <a href="mailto:deepak2052dhakal@gmail.com" class="email-link">
+                  deepak2052dhakal@gmail.com
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- OPENING HOURS -->
+          <div class="contact-item">
+            <div class="contact-item-icon">🕐</div>
+            <div>
+              <div class="contact-item-title">Opening Hours</div>
+              <div class="contact-item-value">
+                Sunday – Friday: 7:00 AM – 8:00 PM<br />
+                Saturday: 8:00 AM – 6:00 PM
+              </div>
+            </div>
+          </div>
+
+          <!-- HOME SERVICE -->
+          <div class="contact-item">
+            <div class="contact-item-icon">🏠</div>
+            <div>
+              <div class="contact-item-title">Home Service</div>
+              <div class="contact-item-value">
+                Available for elderly &amp; disabled patients.<br />
+                Call to schedule a home visit.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN: Prescription + inquiry form -->
+        <div class="contact-form">
+          <h3>Send Prescription & Inquiry</h3>
+          <p>Upload your prescription image and share the link with us.</p>
+
+          <!-- Hidden Cloudinary image URL (will be filled by JS) -->
+          <input
+            type="hidden"
+            id="cloudinaryImageUrl"
+            name="cloudinaryImageUrl"
+            value=""
+          />
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email (optional)</label>
+            <input type="email" id="email" name="email" />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+          </div>
+
+          <!-- Prescription file upload -->
+          <div class="form-group">
+            <label for="prescriptionFile">Prescription Image or PDF</label>
+            <input
+              type="file"
+              id="prescriptionFile"
+              class="file-input"
+              name="prescriptionFile"
+              accept="image/*,.pdf"
+              required
+            />
+            <p class="file-hint">
+              Upload a clear photo or scan of your prescription.
+            </p>
+            <div class="prescription-preview" id="prescriptionPreview"></div>
+          </div>
+
+          <!-- Action buttons -->
+          <div class="form-send-options">
+            <!-- WhatsApp Button -->
+            <button
+              type="button"
+              class="submit-btn submit-whatsapp"
+              id="sendToWhatsAppBtn"
+            >
+              Share via WhatsApp
+            </button>
+
+            <!-- Copy-link Button -->
+            <button
+              type="button"
+              class="submit-btn submit-email"
+              id="copyLinkBtn"
+            >
+              Copy Cloudinary Link
+            </button>
+          </div>
+
+          <!-- Status / URL display -->
+          <div class="form-note" id="emailStatus"></div>
+          <div class="form-note" id="linkPreview" style="display: none">
+            <strong>Prescription URL:</strong>
+            <div id="urlText" style="margin: 8px 0"></div>
+            <button id="btnCopy" class="btn-link-copy" style="margin-top: 4px">
+              Copy URL
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- GOOGLE MAP EMBED -->
+      <div class="reveal" style="margin-top: 56px">
+        <h3 class="map-label">📍 Find Us on the Map</h3>
+        <div class="map-wrapper">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d883.6!2d84.42119!3d27.67368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3994fb007afa5913%3A0xc47a0fffb12721bf!2sSadbhav%20Pharmacy!5e0!3m2!1sen!2snp!4v1715000000000!5m2!1sen!2snp"
+            width="100%"
+            height="400"
+            style="border: 0; display: block"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Sadbhav Pharmacy — Pipalchowk, Bharatpur-4, Chitwan 44207, Nepal"
+          ></iframe>
+        </div>
+        <!-- Get Directions button — opens Google Maps app -->
+        <div style="text-align: center; margin-top: 16px">
+          <a
+            href="https://maps.app.goo.gl/tzJt96VNFgHhU434A"
+            target="_blank"
+            rel="noopener"
+            class="directions-btn"
+          >
+            <i data-lucide="navigation"></i>
+            Get Directions to Sadbhav Pharmacy
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+       FOOTER
+       Three columns: Brand, Quick Links, Hours.
+       Developer credit at bottom.
+     ============================================ -->
+    <footer>
+      <div class="footer-grid">
+        <!-- BRAND COLUMN -->
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <div class="nav-logo-icon">
+              <img
+                src="assets/logos/logo.svg"
+                alt="Sadbhav Pharmacy Logo"
+                class="nav-logo-img"
+              />
+              <span class="nav-logo-fallback">🌿</span>
+            </div>
+            <div class="nav-logo-text" style="color: white">
+              Sadbhav Pharmacy
+              <span>Chitwan, Nepal</span>
+            </div>
+          </div>
+          <p>
+            Your trusted community pharmacy in Pipalchowk, Bharatpur-4, Chitwan
+            — committed to accessible, compassionate healthcare for everyone.
+          </p>
+        </div>
+
+        <!-- QUICK LINKS COLUMN -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#staff">Our Team</a></li>
+            <li><a href="#why">Why Choose Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- HOURS + CONTACT COLUMN -->
+        <div class="footer-col">
+          <h4>Opening Hours</h4>
+          <div class="footer-hours">
+            Sun – Fri: 7:00 AM – 8:00 PM<br />
+            Saturday: 8:00 AM – 6:00 PM<br /><br />
+            <!-- One tap call link in footer -->
+            <a
+              href="tel:+9779845440560"
+              style="color: rgba(255, 255, 255, 0.75); text-decoration: none"
+            >
+              📞 9845440560 </a
+            ><br />
+            <!-- WhatsApp link in footer -->
+            <a
+              href="https://wa.me/9779856014560"
+              target="_blank"
+              rel="noopener"
+              style="color: #25d366; text-decoration: none"
+            >
+              💬 +977 985-6014560 </a
+            ><br /><br />
+            🏠 Home visits available<br />
+            for elderly &amp; disabled patients
+          </div>
+        </div>
+      </div>
+
+      <hr class="footer-divider" />
+
+      <div class="footer-bottom">
+        <div>
+          © 2025 Sadbhav Pharmacy. All rights reserved. | Pipalchowk,
+          Bharatpur-4, Chitwan 44207, Nepal | Owner: Sabina Poudel
+        </div>
+        <div class="dda">DDA Reg. No. 37407060532127</div>
+      </div>
+
+      <!-- Developer credit — visible to visitors -->
+      <div class="developer-credit">
+        Designed &amp; Developed with ❤️ by
+        <a href="#" target="_blank" rel="noopener">Ravi Sapkota</a>
+        · Freelance Web Designer · Chitwan, Nepal 🇳🇵
+      </div>
+    </footer>
+
+    <!-- ============================================
+       WHATSAPP FLOATING BUTTON
+       Fixed bottom-right corner — always visible.
+       Clicking opens WhatsApp chat with a
+       pre-filled greeting message.
+       id="whatsappBtn" — JavaScript can target it.
+       class="whatsapp-float" — CSS styles it.
+     ============================================ -->
+    <a
+      href="https://wa.me/9779856014560?text=Hello%20Sadbhav%20Pharmacy!%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+      target="_blank"
+      rel="noopener"
+      title="Chat with us on WhatsApp"
+      id="whatsappBtn"
+      class="whatsapp-float"
+      aria-label="Chat on WhatsApp"
+    >
+      💬
+    </a>
+
+    <!-- JS FILE -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
