@@ -1491,3 +1491,65 @@ footer {
   transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(200, 168, 75, 0.5);
 }
+/* ============================================
+   FOOTER SHARE BUTTONS
+============================================ */
+.footer-share {
+  text-align: center;
+  padding: 32px 0 24px;
+}
+
+.footer-share-title {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 16px;
+}
+
+.footer-share-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 18px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition:
+    transform 0.2s,
+    opacity 0.2s;
+}
+
+.share-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.share-facebook {
+  background: #1877f2;
+  color: white;
+}
+.share-whatsapp {
+  background: #25d366;
+  color: white;
+}
+.share-twitter {
+  background: #000000;
+  color: white;
+}
+.share-linkedin {
+  background: #0a66c2;
+  color: white;
+}
+.share-viber {
+  background: #7360f2;
+  color: white;
+}
