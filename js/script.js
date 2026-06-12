@@ -191,4 +191,123 @@ document.addEventListener("DOMContentLoaded", function () {
     const url = `https://wa.me/9779856014560?text=${msg}`;
     window.open(url, "_blank");
   });
+  // ============================================
+  //   REVIEWS — Google Sheets Integration
+  // ============================================
+  const REVIEWS_URL =
+    "https://script.google.com/macros/s/AKfycbxMmN8yOanceBxDHtuiTM1gJ4I1YYAXaPABT1w9G8N_i7Yz_EznLRAqe60cYNwhczeF/exec";
+
+  let selectedRating = 0;
+
+  // Star rating interaction
+  document.querySelectorAll(".star").forEach((star) => {
+    star.addEventListener("mouseover", function () {
+      const val = parseInt(this.dataset.value);
+      document.querySelectorAll(".star").forEach((s, i) => {
+        s.classList.toggle("active", i < val);
+      });
+    });
+
+    star.addEventListener("mouseout", function () {
+      document.querySelectorAll(".star").forEach((s, i) => {
+        s.classList.toggle("active", i < selectedRating);
+      });
+    });
+
+    star.addEventListener("click", function () {
+      selectedRating = parseInt(this.dataset.value);
+      const labels = ["", "Poor", "Fair", "Good", "Very Good", "Excellent"];
+      document.getElementById("starLabel").textContent =
+        labels[selectedRating] + " (" + selectedRating + "/5)";
+    });
+  });
+
+  // Submit review
+  function submitReview() {
+    const name = document.getElementById("reviewName").value.trim();
+    const review = document.getElementById("reviewText").value.trim();
+    const status = document.getElementById("reviewStatus");
+
+    if (!selectedRating) {
+      status.style.color = "#e53e3e";
+      status.textContent = "Please select a star rating!";
+      return;
+    }
+    if (!name) {
+      status.style.color = "#e53e3e";
+      status.textContent = "Please enter your name!";
+      return;
+    }
+    if (!review) {
+      status.style.color = "#e53e3e";
+      status.textContent = "Please write your review!";
+      return;
+    }
+
+    const btn = document.getElementById("reviewSubmitBtn");
+    btn.textContent = "Submitting...";
+    btn.disabled = true;
+    status.style.color = "#2d6a4f";
+    status.textContent = "";
+
+    fetch(REVIEWS_URL, {
+      method: "POST",
+      mode: "no-cors",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name, rating: selectedRating, review }),
+    })
+      .then(() => {
+        status.textContent = "✅ Thank you! Your review has been submitted!";
+        document.getElementById("reviewName").value = "";
+        document.getElementById("reviewText").value = "";
+        selectedRating = 0;
+        document
+          .querySelectorAll(".star")
+          .forEach((s) => s.classList.remove("active"));
+        document.getElementById("starLabel").textContent = "Click to rate";
+        btn.textContent = "Submit Review";
+        btn.disabled = false;
+        setTimeout(loadReviews, 2000);
+      })
+      .catch(() => {
+        status.style.color = "#e53e3e";
+        status.textContent = "Something went wrong. Please try again!";
+        btn.textContent = "Submit Review";
+        btn.disabled = false;
+      });
+  }
+
+  // Load and display reviews
+  function loadReviews() {
+    fetch(REVIEWS_URL)
+      .then((res) => res.json())
+      .then((data) => {
+        const grid = document.getElementById("reviewsGrid");
+        if (!data.length) {
+          grid.innerHTML =
+            '<p class="reviews-loading">No reviews yet. Be the first to review!</p>';
+          return;
+        }
+        grid.innerHTML = data
+          .reverse()
+          .map(
+            (r) => `
+      <div class="review-card">
+        <div class="review-card-stars">${"★".repeat(r.rating)}${"☆".repeat(5 - r.rating)}</div>
+        <p class="review-card-text">"${r.review}"</p>
+        <div class="review-card-name">— ${r.name}</div>
+        <div class="review-card-date">${r.timestamp}</div>
+      </div>
+    `,
+          )
+          .join("");
+      })
+      .catch(() => {
+        document.getElementById("reviewsGrid").innerHTML =
+          '<p class="reviews-loading">Could not load reviews.</p>';
+      });
+  }
+
+  // Load reviews on page load
+  loadReviews();
 });

@@ -700,6 +700,62 @@
         </div>
       </div>
     </section>
+    <!-- ============================================
+   REVIEWS SECTION
+============================================ -->
+    <section id="reviews">
+      <div class="section-header reveal">
+        <span class="section-label">Patient Feedback</span>
+        <h2 class="section-title">What Our Patients Say</h2>
+        <p class="section-desc">
+          Real experiences from our valued patients and community members.
+        </p>
+      </div>
+
+      <!-- REVIEW FORM -->
+      <div class="review-form-wrap reveal">
+        <h3 class="review-form-title">Share Your Experience</h3>
+
+        <!-- STAR RATING -->
+        <div class="star-rating" id="starRating">
+          <span class="star" data-value="1">&#9733;</span>
+          <span class="star" data-value="2">&#9733;</span>
+          <span class="star" data-value="3">&#9733;</span>
+          <span class="star" data-value="4">&#9733;</span>
+          <span class="star" data-value="5">&#9733;</span>
+        </div>
+        <p class="star-label" id="starLabel">Click to rate</p>
+
+        <div class="review-fields">
+          <input
+            type="text"
+            id="reviewName"
+            placeholder="Your Name"
+            maxlength="60"
+          />
+          <textarea
+            id="reviewText"
+            placeholder="Write your review here..."
+            rows="4"
+            maxlength="500"
+          ></textarea>
+        </div>
+
+        <button
+          class="review-submit-btn"
+          id="reviewSubmitBtn"
+          onclick="submitReview()"
+        >
+          Submit Review
+        </button>
+        <p class="review-status" id="reviewStatus"></p>
+      </div>
+
+      <!-- REVIEWS DISPLAY -->
+      <div class="reviews-grid" id="reviewsGrid">
+        <p class="reviews-loading" id="reviewsLoading">Loading reviews...</p>
+      </div>
+    </section>
 
     <!-- ============================================
        CONTACT SECTION
